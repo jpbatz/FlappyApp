@@ -1,0 +1,6 @@
+@import "partials/settings";
+@import "../bower_components/foundation/scss/foundation";
+
+.your-class-name {
+  @include block-grid(3);
+}
