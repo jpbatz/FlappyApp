@@ -9,7 +9,7 @@ var sass = require('gulp-sass');
 
 // keeps gulp from crashing for scss errors
 gulp.task('styles', function () {
-  return gulp.src('./sass/*.scss')
+  return gulp.src('./sass/**/*.scss')
       .pipe(sass({
          errLogToConsole: true
       }))
