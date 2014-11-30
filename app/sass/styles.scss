@@ -2,88 +2,138 @@
 @import "../public/bower_components/foundation/scss/foundation";
 
 header {
+  // border needs to be smaller
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
+  background-size: 60px;
   background-color: $black;
   height: 80px;
 
   .row {
     .large-6 {
-         
       h1 {
         // border: 1px solid white;
         margin-top: 10px;
+        line-height: 40px;
         // need to make logo line even with menu
-
+        // logo area needs to be larger
         a {
           color: $main_teal;
           font-family: 'Lato', sans-serif;
-          font-size: 24px;
+          font-size: 26px;
           position: relative;
-
+          background-size: contain;
           #flappy {
             // border: 1px solid red;
             display: inline-block;
             // position: absolute;
             // bottom: 0px;
+            letter-spacing: 3px;
           }
-
           #app {
             // border: 1px solid red;
             display: inline-block;
             position: absolute;
             bottom: -4px;
-            right: -80px;
+            right: -88px;
+            letter-spacing: 3px;
           }
-
           #logo {
             // border: 1px solid red;
             display: inline-block;
             padding-top: 30px;
-
             background-image: url('/images/logo.png');
             background-repeat: no-repeat;
             height: 25px;
             width: 45px;
             background-size: contain;
             position: absolute;
-            right: 336px;
+            right: 216px;
             bottom: 9px;
           }
-
-
         }  // END a
-
       }  // END h1
     }  // END .large-6 .columns
 
-      #menu {
-        padding: 25px;
-        text-align: right;
-        
-        li {
-          border: 1px solid yellow;
-          display: inline-block;
-          color: $main_teal;
-          font-size: 8px;
-          border-bottom: 2px solid $main_teal;
-          
-          a {
-            span {
-             
-            }
+    #menu {
+      padding: 25px 0px;
+      text-align: right;
+      letter-spacing: 2px;
+      li {
+        border: 1px solid yellow;
+        display: inline-block;
+        color: $main_teal;
+        font-size: 8px;
+        border-bottom: 2px solid $main_teal;
+        padding-left: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        a {
+          border: 1px solid orange;
+          span {
+            border: 1px solid pink;
           }
         }
-
-        li:hover {
-          // nned to separate items and line continuous and lower
-          color: $white;
-          margin: 0px;
-          border-bottom: 2px solid $white;
-        }
-      }  // end #menu
-
+      }
+      li:hover {
+        // nned to separate items and line continuous and lower
+        color: $white;
+        margin: 0px;
+        border-bottom: 2px solid $white;
+      }
+    }  // end #menu
   }  // end .row
 } // END header
 
 
+#content {
+  .row {
+    margin-top: 25px;
+    .large-9 {
+      #scenery {
+        border: 2px solid black;
+        background-image: url('/images/scenery.png');
+        // width: 100px;
+        // background-size: 500px auto;
+        background-repeat: no-repeat;
+
+        height: 210px;
+        width: 100%;
+        background-size: cover;
+        background-position: right center;
+      }    
+    }
+    .large-3 {
+      border: 1px solid red;
+      #features {
+        margin: 0px;
+        padding: 0px;
+        background-color: $main_teal;
+        text-align: center;
+        list-style-type: none;
+        font-size: 8px;
+        letter-spacing: 1px;
+        width: 100%; 
+        #feature-heading {
+          background-color: $black;
+          padding: 10px 0px;
+          color: $main_teal;
+        }
+        #feature-item {
+          border: 1px solid green;
+          padding: 15px 10px;
+          font-weight: bold;
+          #number {
+            color: white;
+          }
+        }  // END #feature-item
+      }  // END #features
+    }  // END .large-3
+  }  // END .row
+
+  #blurb {
+    p {
+      font-weight: 500;
+    }
+  }  // end #blurb
+}  // END #content

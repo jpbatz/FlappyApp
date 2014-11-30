@@ -101,7 +101,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem; }
+  max-width: 50rem; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -3454,7 +3454,7 @@ ul.pagination {
   @media only screen and (min-width:40.063em) {
     .reveal-modal {
       width: 80%;
-      max-width: 62.5rem;
+      max-width: 50rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
@@ -3470,35 +3470,35 @@ ul.pagination {
   @media only screen and (min-width:40.063em) {
     .reveal-modal.tiny {
       width: 30%;
-      max-width: 62.5rem;
+      max-width: 50rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.small {
       width: 40%;
-      max-width: 62.5rem;
+      max-width: 50rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.medium {
       width: 60%;
-      max-width: 62.5rem;
+      max-width: 50rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.large {
       width: 70%;
-      max-width: 62.5rem;
+      max-width: 50rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.xlarge {
       width: 95%;
-      max-width: 62.5rem;
+      max-width: 50rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
@@ -3513,7 +3513,7 @@ ul.pagination {
     @media only screen and (min-width:40.063em) {
       .reveal-modal.full {
         width: 100vw;
-        max-width: 62.5rem;
+        max-width: 50rem;
         left: 0;
         right: 0;
         margin: 0 auto; } }
@@ -4343,7 +4343,7 @@ meta.foundation-mq-topbar {
     .top-bar.expanded {
       background: #333333; }
   .contain-to-grid .top-bar {
-    max-width: 62.5rem;
+    max-width: 50rem;
     margin: 0 auto;
     margin-bottom: 0; }
   .top-bar-section {
@@ -5560,22 +5560,27 @@ th.hide-for-touch {
 header {
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
+  background-size: 60px;
   background-color: #000000;
   height: 80px; }
   header .row .large-6 h1 {
-    margin-top: 10px; }
+    margin-top: 10px;
+    line-height: 40px; }
     header .row .large-6 h1 a {
       color: #00D6D2;
       font-family: 'Lato', sans-serif;
-      font-size: 24px;
-      position: relative; }
+      font-size: 26px;
+      position: relative;
+      background-size: contain; }
       header .row .large-6 h1 a #flappy {
-        display: inline-block; }
+        display: inline-block;
+        letter-spacing: 3px; }
       header .row .large-6 h1 a #app {
         display: inline-block;
         position: absolute;
         bottom: -4px;
-        right: -80px; }
+        right: -88px;
+        letter-spacing: 3px; }
       header .row .large-6 h1 a #logo {
         display: inline-block;
         padding-top: 30px;
@@ -5585,18 +5590,60 @@ header {
         width: 45px;
         background-size: contain;
         position: absolute;
-        right: 336px;
+        right: 216px;
         bottom: 9px; }
   header .row #menu {
-    padding: 25px;
-    text-align: right; }
+    padding: 25px 0px;
+    text-align: right;
+    letter-spacing: 2px; }
     header .row #menu li {
       border: 1px solid yellow;
       display: inline-block;
       color: #00D6D2;
       font-size: 8px;
-      border-bottom: 2px solid #00D6D2; }
+      border-bottom: 2px solid #00D6D2;
+      padding-left: 10px;
+      margin-left: 0px;
+      margin-right: 0px; }
+      header .row #menu li a {
+        border: 1px solid orange; }
+        header .row #menu li a span {
+          border: 1px solid pink; }
     header .row #menu li:hover {
       color: #FFFFFF;
       margin: 0px;
       border-bottom: 2px solid #FFFFFF; }
+
+#content .row {
+  margin-top: 25px; }
+  #content .row .large-9 #scenery {
+    border: 2px solid black;
+    background-image: url('/images/scenery.png');
+    background-repeat: no-repeat;
+    height: 210px;
+    width: 100%;
+    background-size: cover;
+    background-position: right center; }
+  #content .row .large-3 {
+    border: 1px solid red; }
+    #content .row .large-3 #features {
+      margin: 0px;
+      padding: 0px;
+      background-color: #00D6D2;
+      text-align: center;
+      list-style-type: none;
+      font-size: 8px;
+      letter-spacing: 1px;
+      width: 100%; }
+      #content .row .large-3 #features #feature-heading {
+        background-color: #000000;
+        padding: 10px 0px;
+        color: #00D6D2; }
+      #content .row .large-3 #features #feature-item {
+        border: 1px solid green;
+        padding: 15px 10px;
+        font-weight: bold; }
+        #content .row .large-3 #features #feature-item #number {
+          color: white; }
+#content #blurb p {
+  font-weight: 500; }
