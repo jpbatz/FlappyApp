@@ -1,6 +1,89 @@
 @import "partials/settings";
 @import "../public/bower_components/foundation/scss/foundation";
 
-.your-class-name {
-  @include block-grid(3);
-}
+header {
+  background-image: url('/images/border.png');
+  background-repeat: repeat-x;
+  background-color: $black;
+  height: 80px;
+
+  .row {
+    .large-6 {
+         
+      h1 {
+        // border: 1px solid white;
+        margin-top: 10px;
+        // need to make logo line even with menu
+
+        a {
+          color: $main_teal;
+          font-family: 'Lato', sans-serif;
+          font-size: 24px;
+          position: relative;
+
+          #flappy {
+            // border: 1px solid red;
+            display: inline-block;
+            // position: absolute;
+            // bottom: 0px;
+          }
+
+          #app {
+            // border: 1px solid red;
+            display: inline-block;
+            position: absolute;
+            bottom: -4px;
+            right: -80px;
+          }
+
+          #logo {
+            // border: 1px solid red;
+            display: inline-block;
+            padding-top: 30px;
+
+            background-image: url('/images/logo.png');
+            background-repeat: no-repeat;
+            height: 25px;
+            width: 45px;
+            background-size: contain;
+            position: absolute;
+            right: 336px;
+            bottom: 9px;
+          }
+
+
+        }  // END a
+
+      }  // END h1
+    }  // END .large-6 .columns
+
+      #menu {
+        padding: 25px;
+        text-align: right;
+        
+        li {
+          border: 1px solid yellow;
+          display: inline-block;
+          color: $main_teal;
+          font-size: 8px;
+          border-bottom: 2px solid $main_teal;
+          
+          a {
+            span {
+             
+            }
+          }
+        }
+
+        li:hover {
+          // nned to separate items and line continuous and lower
+          color: $white;
+          margin: 0px;
+          border-bottom: 2px solid $white;
+        }
+      }  // end #menu
+
+  }  // end .row
+} // END header
+
+

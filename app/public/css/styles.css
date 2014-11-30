@@ -101,7 +101,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 75rem; }
+  max-width: 62.5rem; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -3454,7 +3454,7 @@ ul.pagination {
   @media only screen and (min-width:40.063em) {
     .reveal-modal {
       width: 80%;
-      max-width: 75rem;
+      max-width: 62.5rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
@@ -3470,35 +3470,35 @@ ul.pagination {
   @media only screen and (min-width:40.063em) {
     .reveal-modal.tiny {
       width: 30%;
-      max-width: 75rem;
+      max-width: 62.5rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.small {
       width: 40%;
-      max-width: 75rem;
+      max-width: 62.5rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.medium {
       width: 60%;
-      max-width: 75rem;
+      max-width: 62.5rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.large {
       width: 70%;
-      max-width: 75rem;
+      max-width: 62.5rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.xlarge {
       width: 95%;
-      max-width: 75rem;
+      max-width: 62.5rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
@@ -3513,7 +3513,7 @@ ul.pagination {
     @media only screen and (min-width:40.063em) {
       .reveal-modal.full {
         width: 100vw;
-        max-width: 75rem;
+        max-width: 62.5rem;
         left: 0;
         right: 0;
         margin: 0 auto; } }
@@ -4343,7 +4343,7 @@ meta.foundation-mq-topbar {
     .top-bar.expanded {
       background: #333333; }
   .contain-to-grid .top-bar {
-    max-width: 75rem;
+    max-width: 62.5rem;
     margin: 0 auto;
     margin-bottom: 0; }
   .top-bar-section {
@@ -5557,25 +5557,46 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
-.your-class-name {
-  display: block;
-  padding: 0;
-  margin: 0 -0.625rem; }
-  .your-class-name:before, .your-class-name:after {
-    content: " ";
-    display: table; }
-  .your-class-name:after {
-    clear: both; }
-  .your-class-name > li {
-    display: block;
-    height: auto;
-    float: left;
-    padding: 0 0.625rem 1.25rem; }
-  .your-class-name > li {
-    width: 33.33333%;
-    padding: 0 0.625rem 1.25rem;
-    list-style: none; }
-    .your-class-name > li:nth-of-type(1n) {
-      clear: none; }
-    .your-class-name > li:nth-of-type(3n+1) {
-      clear: both; }
+header {
+  background-image: url('/images/border.png');
+  background-repeat: repeat-x;
+  background-color: #000000;
+  height: 80px; }
+  header .row .large-6 h1 {
+    margin-top: 10px; }
+    header .row .large-6 h1 a {
+      color: #00D6D2;
+      font-family: 'Lato', sans-serif;
+      font-size: 24px;
+      position: relative; }
+      header .row .large-6 h1 a #flappy {
+        display: inline-block; }
+      header .row .large-6 h1 a #app {
+        display: inline-block;
+        position: absolute;
+        bottom: -4px;
+        right: -80px; }
+      header .row .large-6 h1 a #logo {
+        display: inline-block;
+        padding-top: 30px;
+        background-image: url('/images/logo.png');
+        background-repeat: no-repeat;
+        height: 25px;
+        width: 45px;
+        background-size: contain;
+        position: absolute;
+        right: 336px;
+        bottom: 9px; }
+  header .row #menu {
+    padding: 25px;
+    text-align: right; }
+    header .row #menu li {
+      border: 1px solid yellow;
+      display: inline-block;
+      color: #00D6D2;
+      font-size: 8px;
+      border-bottom: 2px solid #00D6D2; }
+    header .row #menu li:hover {
+      color: #FFFFFF;
+      margin: 0px;
+      border-bottom: 2px solid #FFFFFF; }
