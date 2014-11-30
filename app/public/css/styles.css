@@ -5593,25 +5593,26 @@ header {
         right: 216px;
         bottom: 9px; }
   header .row #menu {
-    padding: 25px 0px;
+    padding: 17px 0px;
     text-align: right;
     letter-spacing: 2px; }
     header .row #menu li {
-      border: 1px solid yellow;
       display: inline-block;
       color: #00D6D2;
       font-size: 8px;
       border-bottom: 2px solid #00D6D2;
-      padding-left: 10px;
-      margin-left: 0px;
+      padding-right: 0px;
+      padding-left: 25px;
+      padding-bottom: 5px;
+      margin-left: -16px;
       margin-right: 0px; }
-      header .row #menu li a {
-        border: 1px solid orange; }
-        header .row #menu li a span {
-          border: 1px solid pink; }
     header .row #menu li:hover {
       color: #FFFFFF;
-      margin: 0px;
+      margin-right: 0px;
+      margin-left: -16px;
+      padding-right: 0px;
+      padding-left: 25px;
+      padding-bottom: 5px;
       border-bottom: 2px solid #FFFFFF; }
 
 #content .row {
@@ -5624,26 +5625,49 @@ header {
     width: 100%;
     background-size: cover;
     background-position: right center; }
-  #content .row .large-3 {
-    border: 1px solid red; }
-    #content .row .large-3 #features {
+  #content .row .large-3 #features {
+    margin: 0px;
+    margin-left: -0.9375rem;
+    background-color: #00D6D2;
+    text-align: center;
+    list-style-type: none;
+    font-size: 8px;
+    letter-spacing: 1px; }
+    #content .row .large-3 #features #feature-heading {
+      background-color: #000000;
       margin: 0px;
-      padding: 0px;
-      background-color: #00D6D2;
-      text-align: center;
-      list-style-type: none;
-      font-size: 8px;
-      letter-spacing: 1px;
-      width: 100%; }
-      #content .row .large-3 #features #feature-heading {
-        background-color: #000000;
-        padding: 10px 0px;
-        color: #00D6D2; }
-      #content .row .large-3 #features #feature-item {
-        border: 1px solid green;
-        padding: 15px 10px;
-        font-weight: bold; }
-        #content .row .large-3 #features #feature-item #number {
-          color: white; }
+      padding: 10px 15px;
+      color: #00D6D2; }
+    #content .row .large-3 #features #feature-item {
+      border: 1px solid #BFCECD;
+      margin: 0px;
+      padding: 15px 15px;
+      font-weight: bold; }
+      #content .row .large-3 #features #feature-item #number {
+        color: white; }
 #content #blurb p {
   font-weight: 500; }
+
+#footer-section {
+  background-color: #000000;
+  background-image: url('/images/border.png');
+  background-repeat: repeat-x;
+  background-size: 60px;
+  padding-top: 30px; }
+  #footer-section ul {
+    border: 1px solid #FFFFFF; }
+    #footer-section ul li {
+      list-style-type: none; }
+      #footer-section ul li a {
+        font-weight: 300;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        color: #00D6D2;
+        text-transform: uppercase; }
+  #footer-section #footer-bar .row .large-12 p {
+    text-align: center;
+    font-size: 8px;
+    color: #000000;
+    font-weight: bold;
+    background-color: #00D6D2;
+    padding: 5px 0px; }

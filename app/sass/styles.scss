@@ -2,7 +2,6 @@
 @import "../public/bower_components/foundation/scss/foundation";
 
 header {
-  // border needs to be smaller
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
   background-size: 60px;
@@ -56,29 +55,35 @@ header {
     }  // END .large-6 .columns
 
     #menu {
-      padding: 25px 0px;
+      padding: 17px 0px;
       text-align: right;
       letter-spacing: 2px;
       li {
-        border: 1px solid yellow;
+        // border: 1px solid yellow;
         display: inline-block;
         color: $main_teal;
         font-size: 8px;
         border-bottom: 2px solid $main_teal;
-        padding-left: 10px;
-        margin-left: 0px;
+        padding-right: 0px;
+        padding-left: 25px;
+        padding-bottom: 5px;
+        margin-left: -16px;
         margin-right: 0px;
         a {
-          border: 1px solid orange;
+          // border: 1px solid orange;
           span {
-            border: 1px solid pink;
+            // border: 1px solid pink;
           }
         }
       }
       li:hover {
-        // nned to separate items and line continuous and lower
+        // underline hover not same width as menu item
         color: $white;
-        margin: 0px;
+        margin-right: 0px;
+        margin-left: -16px;
+        padding-right: 0px;
+        padding-left: 25px;
+        padding-bottom: 5px;
         border-bottom: 2px solid $white;
       }
     }  // end #menu
@@ -93,10 +98,7 @@ header {
       #scenery {
         border: 2px solid black;
         background-image: url('/images/scenery.png');
-        // width: 100px;
-        // background-size: 500px auto;
         background-repeat: no-repeat;
-
         height: 210px;
         width: 100%;
         background-size: cover;
@@ -104,24 +106,26 @@ header {
       }    
     }
     .large-3 {
-      border: 1px solid red;
+      // border: 1px solid red;
       #features {
         margin: 0px;
-        padding: 0px;
+        // margin-right: -0.9375rem;
+        margin-left: -0.9375rem;
         background-color: $main_teal;
         text-align: center;
         list-style-type: none;
         font-size: 8px;
         letter-spacing: 1px;
-        width: 100%; 
         #feature-heading {
           background-color: $black;
-          padding: 10px 0px;
+          margin: 0px;
+          padding: 10px 15px;
           color: $main_teal;
         }
         #feature-item {
-          border: 1px solid green;
-          padding: 15px 10px;
+          border: 1px solid #BFCECD;
+          margin: 0px;
+          padding: 15px 15px;
           font-weight: bold;
           #number {
             color: white;
@@ -137,3 +141,44 @@ header {
     }
   }  // end #blurb
 }  // END #content
+
+
+#footer-section {
+  background-color: $black;
+  background-image: url('/images/border.png');
+  background-repeat: repeat-x;
+  background-size: 60px;
+  padding-top: 30px;
+
+  ul {
+    border: 1px solid $white;
+
+    li {
+      list-style-type: none;
+
+      a {
+        font-weight: 300;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        color: $main_teal;
+        text-transform: uppercase;
+      }
+    }
+  }
+  
+  #footer-bar {
+    .row {
+      .large-12 {
+        p {
+          // border: 1px solid $white;
+          text-align: center;
+          font-size: 8px;
+          color: $black;
+          font-weight: bold;
+          background-color: $main_teal;
+          padding: 5px 0px;
+        }
+      }
+    }
+  }  // END #footer-bar
+}  // END #footer-section
