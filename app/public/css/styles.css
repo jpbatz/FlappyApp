@@ -101,7 +101,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 50rem; }
+  max-width: 68.75rem; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -3454,7 +3454,7 @@ ul.pagination {
   @media only screen and (min-width:40.063em) {
     .reveal-modal {
       width: 80%;
-      max-width: 50rem;
+      max-width: 68.75rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
@@ -3470,35 +3470,35 @@ ul.pagination {
   @media only screen and (min-width:40.063em) {
     .reveal-modal.tiny {
       width: 30%;
-      max-width: 50rem;
+      max-width: 68.75rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.small {
       width: 40%;
-      max-width: 50rem;
+      max-width: 68.75rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.medium {
       width: 60%;
-      max-width: 50rem;
+      max-width: 68.75rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.large {
       width: 70%;
-      max-width: 50rem;
+      max-width: 68.75rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
   @media only screen and (min-width:40.063em) {
     .reveal-modal.xlarge {
       width: 95%;
-      max-width: 50rem;
+      max-width: 68.75rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
@@ -3513,7 +3513,7 @@ ul.pagination {
     @media only screen and (min-width:40.063em) {
       .reveal-modal.full {
         width: 100vw;
-        max-width: 50rem;
+        max-width: 68.75rem;
         left: 0;
         right: 0;
         margin: 0 auto; } }
@@ -4343,7 +4343,7 @@ meta.foundation-mq-topbar {
     .top-bar.expanded {
       background: #333333; }
   .contain-to-grid .top-bar {
-    max-width: 50rem;
+    max-width: 68.75rem;
     margin: 0 auto;
     margin-bottom: 0; }
   .top-bar-section {
@@ -5560,7 +5560,7 @@ th.hide-for-touch {
 header {
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
-  background-size: 60px;
+  background-size: 70px;
   background-color: #000000;
   height: 80px; }
   header .row .large-6 h1 {
@@ -5569,29 +5569,29 @@ header {
     header .row .large-6 h1 a {
       color: #00D6D2;
       font-family: 'Lato', sans-serif;
-      font-size: 26px;
+      font-size: 30px;
       position: relative;
       background-size: contain; }
       header .row .large-6 h1 a #flappy {
         display: inline-block;
-        letter-spacing: 3px; }
+        letter-spacing: 4px; }
       header .row .large-6 h1 a #app {
         display: inline-block;
         position: absolute;
         bottom: -4px;
-        right: -88px;
-        letter-spacing: 3px; }
+        right: -107px;
+        letter-spacing: 4px; }
       header .row .large-6 h1 a #logo {
         display: inline-block;
         padding-top: 30px;
         background-image: url('/images/logo.png');
         background-repeat: no-repeat;
-        height: 25px;
-        width: 45px;
+        height: 40px;
+        width: 60px;
         background-size: contain;
         position: absolute;
-        right: 216px;
-        bottom: 9px; }
+        right: 183px;
+        bottom: 0px; }
   header .row #menu {
     padding: 17px 0px;
     text-align: right;
@@ -5618,7 +5618,7 @@ header {
 #content .row {
   margin-top: 25px; }
   #content .row .large-9 #scenery {
-    border: 2px solid black;
+    border: 4px solid black;
     background-image: url('/images/scenery.png');
     background-repeat: no-repeat;
     height: 210px;
@@ -5646,26 +5646,39 @@ header {
       #content .row .large-3 #features #feature-item #number {
         color: white; }
 #content #blurb p {
-  font-weight: 500; }
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35px; }
 
 #footer-section {
   background-color: #000000;
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
-  background-size: 60px;
+  background-size: 80px;
   padding-top: 30px; }
-  #footer-section .row .large-4 ul li {
-    list-style-type: none; }
-    #footer-section .row .large-4 ul li a {
-      font-weight: 300;
-      font-size: 10px;
-      letter-spacing: 0.5px;
-      color: #00D6D2;
-      text-transform: uppercase; }
+  #footer-section .row .large-4 ul {
+    border-left: 3px solid #00D6D2;
+    margin-left: -12px;
+    padding-left: 24px; }
+    #footer-section .row .large-4 ul li {
+      list-style-type: none; }
+      #footer-section .row .large-4 ul li a {
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 3px;
+        color: #00D6D2;
+        text-transform: uppercase; }
+      #footer-section .row .large-4 ul li a:hover {
+        font-weight: 350;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        color: #FFFFFF;
+        text-transform: uppercase; }
   #footer-section #footer-bar .row .large-12 p {
     text-align: center;
-    font-size: 8px;
+    font-size: 15px;
     color: #000000;
     font-weight: bold;
+    letter-spacing: 1px;
     background-color: #00D6D2;
     padding: 5px 0px; }

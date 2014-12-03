@@ -4,7 +4,7 @@
 header {
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
-  background-size: 60px;
+  background-size: 70px;
   background-color: $black;
   height: 80px;
 
@@ -19,7 +19,7 @@ header {
         a {
           color: $main_teal;
           font-family: 'Lato', sans-serif;
-          font-size: 26px;
+          font-size: 30px;
           position: relative;
           background-size: contain;
           #flappy {
@@ -27,28 +27,28 @@ header {
             display: inline-block;
             // position: absolute;
             // bottom: 0px;
-            letter-spacing: 3px;
+            letter-spacing: 4px;
           }
           #app {
             // border: 1px solid red;
             display: inline-block;
             position: absolute;
             bottom: -4px;
-            right: -88px;
-            letter-spacing: 3px;
+            right: -107px;
+            letter-spacing: 4px;
           }
           #logo {
-            // border: 1px solid red;
+            // border: 1px solid $black;
             display: inline-block;
             padding-top: 30px;
             background-image: url('/images/logo.png');
             background-repeat: no-repeat;
-            height: 25px;
-            width: 45px;
+            height: 40px;
+            width: 60px;
             background-size: contain;
             position: absolute;
-            right: 216px;
-            bottom: 9px;
+            right: 183px;
+            bottom: 0px;
           }
         }  // END a
       }  // END h1
@@ -96,7 +96,7 @@ header {
     margin-top: 25px;
     .large-9 {
       #scenery {
-        border: 2px solid black;
+        border: 4px solid black;
         background-image: url('/images/scenery.png');
         background-repeat: no-repeat;
         height: 210px;
@@ -137,33 +137,46 @@ header {
 
   #blurb {
     p {
+      font-size: 28px;
       font-weight: 500;
+      line-height: 35px;
     }
   }  // end #blurb
 }  // END #content
 
 
 #footer-section {
-  border: 5px solid $white;
+  // border: 5px solid $white;
   background-color: $black;
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
-  background-size: 60px;
+  background-size: 80px;
   padding-top: 30px;
   
   .row {
     .large-4 {
       ul {
-        border: 1px solid $white;
+        border-left: 3px solid $main_teal;
+        margin-left: -12px;
+        padding-left: 24px;
+
         li {
+
           list-style-type: none;
           a {
-            font-weight: 300;
-            font-size: 10px;
-            letter-spacing: 0.5px;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 3px;
             color: $main_teal;
             text-transform: uppercase;
           }  // END a
+          a:hover {
+            font-weight: 350;
+            font-size: 10px;
+            letter-spacing: 0.5px;
+            color: $white;
+            text-transform: uppercase;
+          }  // END a:hover
         }  // END li
       }  // END ul
     }  // END .large-4
@@ -176,9 +189,10 @@ header {
         p {
           // border: 1px solid $white;
           text-align: center;
-          font-size: 8px;
+          font-size: 15px;
           color: $black;
           font-weight: bold;
+          letter-spacing: 1px;
           background-color: $main_teal;
           padding: 5px 0px;
         }  // END p
