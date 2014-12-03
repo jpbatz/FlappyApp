@@ -144,29 +144,33 @@ header {
 
 
 #footer-section {
+  border: 5px solid $white;
   background-color: $black;
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
   background-size: 60px;
   padding-top: 30px;
-
-  ul {
-    border: 1px solid $white;
-
-    li {
-      list-style-type: none;
-
-      a {
-        font-weight: 300;
-        font-size: 10px;
-        letter-spacing: 0.5px;
-        color: $main_teal;
-        text-transform: uppercase;
-      }
-    }
-  }
   
+  .row {
+    .large-4 {
+      ul {
+        border: 1px solid $white;
+        li {
+          list-style-type: none;
+          a {
+            font-weight: 300;
+            font-size: 10px;
+            letter-spacing: 0.5px;
+            color: $main_teal;
+            text-transform: uppercase;
+          }  // END a
+        }  // END li
+      }  // END ul
+    }  // END .large-4
+  }  // END .row
+
   #footer-bar {
+    // border: 1px solid $white;
     .row {
       .large-12 {
         p {
@@ -177,8 +181,8 @@ header {
           font-weight: bold;
           background-color: $main_teal;
           padding: 5px 0px;
-        }
-      }
-    }
+        }  // END p
+      }  // END .large-12
+    }  // END .row
   }  // END #footer-bar
 }  // END #footer-section

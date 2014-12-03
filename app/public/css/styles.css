@@ -5654,16 +5654,14 @@ header {
   background-repeat: repeat-x;
   background-size: 60px;
   padding-top: 30px; }
-  #footer-section ul {
-    border: 1px solid #FFFFFF; }
-    #footer-section ul li {
-      list-style-type: none; }
-      #footer-section ul li a {
-        font-weight: 300;
-        font-size: 10px;
-        letter-spacing: 0.5px;
-        color: #00D6D2;
-        text-transform: uppercase; }
+  #footer-section .row .large-4 ul li {
+    list-style-type: none; }
+    #footer-section .row .large-4 ul li a {
+      font-weight: 300;
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      color: #00D6D2;
+      text-transform: uppercase; }
   #footer-section #footer-bar .row .large-12 p {
     text-align: center;
     font-size: 8px;
