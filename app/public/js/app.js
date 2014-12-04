@@ -39,6 +39,7 @@ function spec_function() {
     console.log("Bird Pic!");
     bird_text = $(this).html();
     $(this).html('<img src="/images/logo.png">');
+    $('span.bird img').css({'width':'40px', 'height':'30px'});
   });
 
   $('body').on('mouseleave', 'span.bird', function() {
