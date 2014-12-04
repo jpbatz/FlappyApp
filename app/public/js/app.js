@@ -33,5 +33,17 @@ function spec_function() {
 
   }
 
+  var bird_text = "";
+
+  $('body').on('mouseenter', 'span.bird', function() {
+    console.log("Bird Pic!");
+    bird_text = $(this).html();
+    $(this).html('<img src="/images/logo.png">');
+  });
+
+  $('body').on('mouseleave', 'span.bird', function() {
+    console.log("Bird Word!");
+    $(this).html(bird_text);
+  });
 
 });
