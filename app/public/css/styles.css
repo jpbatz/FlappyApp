@@ -5601,22 +5601,25 @@ header {
     letter-spacing: 2px; }
     header .row #menu li {
       display: inline-block;
-      color: #00D6D2;
-      font-size: 8px;
-      border-bottom: 2px solid #00D6D2;
+      border-bottom: 4px solid #00D6D2;
+      font-size: 16px;
+      font-weight: 800;
       padding-right: 0px;
-      padding-left: 25px;
       padding-bottom: 5px;
       margin-left: -16px;
-      margin-right: 0px; }
-    header .row #menu li:hover {
-      color: #FFFFFF;
       margin-right: 0px;
-      margin-left: -16px;
-      padding-right: 0px;
-      padding-left: 25px;
-      padding-bottom: 5px;
-      border-bottom: 2px solid #FFFFFF; }
+      margin-top: 37px; }
+      header .row #menu li a {
+        color: #00D6D2;
+        padding-bottom: 8px;
+        margin-right: 25px;
+        margin-top: 37px;
+        border-bottom: 4px solid #00D6D2; }
+      header .row #menu li a:hover {
+        color: #FFFFFF;
+        padding-bottom: 8px;
+        margin-right: 25px;
+        border-bottom: 4px solid #FFFFFF; }
 
 #content .row {
   margin-top: 25px; }
@@ -5644,7 +5647,7 @@ header {
       padding: 10px 15px;
       color: #00D6D2; }
     #content .row .large-4 #features #feature-item {
-      border: 1px solid #BFCECD;
+      border-top: 1px solid #00A0A0;
       margin: 0px;
       padding: 15px 15px;
       font-weight: bold; }

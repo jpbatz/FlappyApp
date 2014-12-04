@@ -65,36 +65,39 @@ header {
       li {
         // border: 1px solid yellow;
         display: inline-block;
-        color: $main_teal;
-        font-size: 8px;
-        border-bottom: 2px solid $main_teal;
+        // need to trim the right side
+        border-bottom: 4px solid $main_teal;
+        font-size: 16px;
+        font-weight: 800;
         padding-right: 0px;
-        padding-left: 25px;
         padding-bottom: 5px;
         margin-left: -16px;
         margin-right: 0px;
+        margin-top: 37px;
         a {
           // border: 1px solid orange;
+          color: $main_teal;
+          padding-bottom: 8px;
+          margin-right: 25px;
+          margin-top: 37px;
+          border-bottom: 4px solid $main_teal;
           span {
             // border: 1px solid pink;
           }
         }
-      }
-      li:hover {
-        // underline hover not same width as menu item
-        color: $white;
-        margin-right: 0px;
-        margin-left: -16px;
-        padding-right: 0px;
-        padding-left: 25px;
-        padding-bottom: 5px;
-        border-bottom: 2px solid $white;
-      }
+        a:hover {
+          // underline hover not same width as menu item
+          color: $white;
+          padding-bottom: 8px;
+          margin-right: 25px;
+          border-bottom: 4px solid $white;
+        }
+      }  // end li
     }  // end #menu
   }  // end .row
 } // END header
 
-
+// need to reduce shadows
 #content {
   .row {
     margin-top: 25px;
@@ -112,7 +115,7 @@ header {
     }
     .large-4 {
       // border: 1px solid red;
-
+      // width is too large
       #features {
         margin: 0px;
         margin-left: 0rem;
@@ -131,7 +134,7 @@ header {
           color: $main_teal;
         }
         #feature-item {
-          border: 1px solid #BFCECD;
+          border-top: 1px solid #00A0A0;
           margin: 0px;
           padding: 15px 15px;
           font-weight: bold;
