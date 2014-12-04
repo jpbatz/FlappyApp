@@ -20,6 +20,7 @@ gulp.task('watch_styles', function () {
   gulp.watch('./sass/**/*.scss', ['styles']);
   gulp.watch('./public/*.html', notifyLiveReload);
   gulp.watch('./public/css/*.css', notifyLiveReload);
+  gulp.watch('./public/js/*.js', notifyLiveReload);
 });
 
 gulp.task('express', function() {
