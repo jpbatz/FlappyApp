@@ -5646,12 +5646,12 @@ header {
       margin: 0px;
       padding: 10px 15px;
       color: #00D6D2; }
-    #content .row .large-4 #features #feature-item {
+    #content .row .large-4 #features .feature-item {
       border-top: 1px solid #00A0A0;
       margin: 0px;
       padding: 15px 15px;
       font-weight: bold; }
-      #content .row .large-4 #features #feature-item #number {
+      #content .row .large-4 #features .feature-item .number {
         color: white; }
 #content #blurb p {
   font-size: 28px;

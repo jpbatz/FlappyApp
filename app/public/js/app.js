@@ -47,4 +47,24 @@ function spec_function() {
     $(this).html(bird_text);
   });
 
+  $('#footer-section .row .large-4 ul li').remove();
+
+  // $('.specs').click(create_footer);
+
+// function create_footer() {
+
+    $.get( "http://beta.json-generator.com/api/json/get/AydVk97", function( data ) {
+      for(var i=0; i<data.length; i++) {
+        console.log(data[i].title);
+      }
+      // $( "#stuff" ).html( data.title );
+      // $( "#stuff" ).html( data.date );
+      // $( "#stuff" ).html( data.body );
+      // alert( "Load was performed." );
+    }, "json");
+
+  // }
+
+  // create_footer();
+
 });
