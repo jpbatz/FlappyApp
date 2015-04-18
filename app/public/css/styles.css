@@ -5599,7 +5599,7 @@ header {
     padding: 17px 0px;
     text-align: right;
     letter-spacing: 2px; }
-    header .row #menu li {
+    header .row #menu .item {
       display: inline-block;
       border-bottom: 4px solid #00D6D2;
       font-size: 16px;
@@ -5609,29 +5609,33 @@ header {
       margin-left: -16px;
       margin-right: 0px;
       margin-top: 37px; }
-      header .row #menu li a {
+      header .row #menu .item a {
         color: #00D6D2;
         padding-bottom: 8px;
         margin-right: 25px;
         margin-top: 37px;
         border-bottom: 4px solid #00D6D2; }
-      header .row #menu li a:hover {
+      header .row #menu .item a:hover {
         color: #FFFFFF;
         padding-bottom: 8px;
         margin-right: 25px;
         border-bottom: 4px solid #FFFFFF; }
+    header .row #menu #last-item a {
+      margin-right: 0px; }
+    header .row #menu #last-item a:hover {
+      margin-right: 0px; }
 
 #content .row {
   margin-top: 25px; }
   #content .row .large-8 #scenery {
-    border: 4px solid black;
+    border: 3px solid black;
     background-image: url('/images/scenery.png');
     background-repeat: no-repeat;
     height: 266px;
     width: 100%;
     background-size: cover;
     background-position: right center;
-    box-shadow: -1px -1px 2em #888888, 1px 1px 2em #888888; }
+    box-shadow: -1px -1px 1em #888888, 1px 1px 1em #888888; }
   #content .row .large-4 #features {
     margin: 0px;
     margin-left: 0rem;
@@ -5640,7 +5644,7 @@ header {
     list-style-type: none;
     font-size: 15px;
     letter-spacing: 2px;
-    box-shadow: -1px -1px 2em #888888, 1px 1px 2em #888888; }
+    box-shadow: -1px -1px 1em #888888, 1px 1px 1em #888888; }
     #content .row .large-4 #features #feature-heading {
       background-color: #000000;
       margin: 0px;
